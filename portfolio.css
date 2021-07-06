@@ -1,0 +1,223 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#navbar
+{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: #cc0000;
+	height: 65px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.nav-link
+{
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	margin: 0px 20px;
+	font-family: 'Mulish',sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+.nav-link:hover
+{
+	background-color: rgba(0, 0, 200, 0.2);
+}
+
+#welcome-section
+{
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Mulish',sans-serif;
+	height: 1000px;
+	background-color: #333;
+	color: white;
+	width: 100%;
+}
+#welcometext
+{
+	padding-top: 350px;
+	font-size: 65px;
+	
+}
+p
+{
+	font-style: italic;
+	font-family: 'Mulish',sans-serif;
+	font-size: 25px;
+	color: #cc0000;
+
+}
+#projects
+{
+	text-align: center;
+	font-family: 'Mulish',sans-serif;
+	background-color: #538cc6;
+	padding-top: 50px;
+	display: grid;
+	grid-template-columns: 400px 400px 400px;
+	grid-gap: 20px 20px;
+	justify-content: center;
+	padding-bottom: 100px;
+	
+
+
+
+
+}
+#projecthead
+{
+	color: white;
+	font-family: 'Mulish',sans-serif;
+	
+	padding-bottom: 10px;
+	
+
+	padding-top: 50px;
+	text-align: center;
+	background-color:#538cc6; 
+	/*width: 100%;*/
+	font-size:40px;
+	font-weight: bold;
+	
+}
+.project-image
+{
+	
+
+	width: 400px;
+	height: 400px;
+}
+#contact{
+	text-align: center;
+	padding-top: 250px;
+	background-color: #333;
+	height: 1000px;
+	justify-content: center;
+	/*padding-bottom: 500px;*/
+
+}
+#contacttext
+{
+	font-size: 50px;
+	font-family: 'Mulish',sans-serif;
+	color: white;
+
+	
+}
+
+#links a 
+{
+	text-decoration: none;
+	color: white;
+	font-family: 'Mulish',sans-serif;
+	margin: 20px;
+	font-size: 25px;
+	
+
+}
+
+
+
+#links
+{
+	padding: 50px;
+	padding-bottom: 450px;
+	
+
+}
+
+#links a:hover
+{
+	color: red;
+}
+
+#links
+{
+	border-bottom: 2px solid red;
+
+}
+footer
+{
+	margin-top: -70px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+}
+.foot
+{
+	font-size: 20px;
+	color: white;
+}
+
+/*media queries*/
+@media (max-width: 600px)
+{
+	#projects
+	{
+		display: flex;
+		flex-direction: column;
+		
+	}
+	#pro1
+	{
+		flex-grow: 1;
+	}
+	footer
+	{
+		display: grid;
+		grid-template-columns: 200px 150px;
+		margin-top: -80px;
+
+	}
+	
+	.foot
+	{
+		font-size: 15px;
+		font-style: initial;
+	}
+	#links
+	{
+		padding-bottom: 400px;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 1023px)
+{
+	#projects
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	footer
+	{
+		display: grid;
+		grid-template-columns: 200px 150px;
+		margin-top: -80px;
+
+	}
+	
+	.foot
+	{
+		font-size: 15px;
+		font-style: initial;
+	}
+}
+
+@media (max-width: 1024px)
+{
+	#projects
+	{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}
